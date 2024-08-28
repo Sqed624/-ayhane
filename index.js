@@ -68,8 +68,8 @@ client.once('ready', () => {
     updateStatusAndSendMessages();
   }, 10000);
 });
-client.on('ready', ()=>{
-client.channels.get('1275947429308403763').join()
-})
+client.on("ready", () => {
+  client.channels.cache.get('1275947429308403763').join();
+  });
 login();
 
